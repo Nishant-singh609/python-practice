@@ -1,0 +1,22 @@
+# there are three type of the method
+# 1)instance method
+# 2)class method
+# 3) static methode
+# ( class  method)Example:--
+class room_mate:
+    home_name="Shree ram bhawan"
+    def __init__(self,F_r_name,S_r_name,T_r_name,Fo_r_name):
+        self.F_r_name=F_r_name
+        self.S_r_name=S_r_name
+        self.T_r_name=T_r_name
+        self.Fo_r_name=Fo_r_name
+    @classmethod
+    def class_acess(cls):
+        print(f"{cls.home_name}") # only we can acesses the class data
+    def get_info(self):
+        print(f"the home_name {self.home_name} first_name {self.F_r_name} secund_room_mate_name {self.S_r_name} third_room_mate_name {self.T_r_name},fourth_room_mate_name {self.Fo_r_name}")
+        # its say two be the para  instance methode
+r1=room_mate("nishant singh","manshi singh","ajay singh","Aniket singh")
+r1.get_info()
+r1.class_acess()
+room_mate.class_acess()

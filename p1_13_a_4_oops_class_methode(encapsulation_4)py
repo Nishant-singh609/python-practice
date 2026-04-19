@@ -1,0 +1,11 @@
+class car:
+     def __init__(self,car_name,model,year_of_purses,amount):
+         self.car_name=car_name
+         self.model=model
+         self.year_of_purses=year_of_purses
+         self.amount=amount
+    
+     def display(self):
+        return (f"{self.car_name} is the year_of_purses={self.year_of_purses}")
+s1=car("mahendra","letest",2026,890000)
+print(s1.display())
